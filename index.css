@@ -1,0 +1,13 @@
+.cli {
+    border: black 1px solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}

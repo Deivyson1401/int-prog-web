@@ -1,6 +1,8 @@
 header {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 85% 15%;
+    text-align: center;
+    padding-left: 15%;
 }
 
 img {
@@ -12,4 +14,8 @@ img {
 .midia {
     display: grid;
     grid-template-rows: 25% 75%;
+}
+
+main {
+    text-align: center;
 }

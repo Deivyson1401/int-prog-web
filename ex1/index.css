@@ -1,0 +1,15 @@
+header {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+img {
+    width: 120px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.midia {
+    display: grid;
+    grid-template-rows: 25% 75%;
+}

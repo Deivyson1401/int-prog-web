@@ -1,8 +1,5 @@
 header {
-    display: grid;
-    grid-template-columns: 85% 15%;
     text-align: center;
-    padding-left: 15%;
 }
 
 img {

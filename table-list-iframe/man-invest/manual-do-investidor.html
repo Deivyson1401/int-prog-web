@@ -18,14 +18,14 @@
                 Gastar, poupar ou investir?
             </h2>
             <p>
-                <a id="slc1" href="https://christianosantos.com/files/cs1/manual-do-investidor/pagina-01.html" target="ifr-ind" onclick="changeName()">Clique aqui</a></p>
+                <a id="slc1" href="https://christianosantos.com/files/cs1/manual-do-investidor/pagina-01.html" target="ifr-ind" onclick="changeName('slc1')">Clique aqui</a></p>
            </li>
            <li>
             <h2>
                 Renda fixa ou variável?
             </h2>
             <p>
-                <a id="slc2" href="https://christianosantos.com/files/cs1/manual-do-investidor/pagina-02.html" target="ifr-ind">Clique aqui</a>
+                <a id="slc2" href="https://christianosantos.com/files/cs1/manual-do-investidor/pagina-02.html" target="ifr-ind" onclick="changeName('slc2')">Clique aqui</a>
             </p>
            </li>
            <li>
@@ -33,7 +33,7 @@
                 Conhecendo o seu perfil de investidor
             </h2>
             <p>
-                <a id="slc3" href="https://christianosantos.com/files/cs1/manual-do-investidor/pagina-03.html" target="ifr-ind">Clique aqui</a>
+                <a id="slc3" href="https://christianosantos.com/files/cs1/manual-do-investidor/pagina-03.html" target="ifr-ind" onclick="changeName('slc3')">Clique aqui</a>
             </p>
            </li>
            <li>
@@ -41,7 +41,7 @@
                 Planejamento financeiro
             </h2>
             <p>
-                <a id="slc4" href="https://christianosantos.com/files/cs1/manual-do-investidor/pagina-04.html" target="ifr-ind">Clique aqui</a>
+                <a id="slc4" href="https://christianosantos.com/files/cs1/manual-do-investidor/pagina-04.html" target="ifr-ind" onclick="changeName('slc4')">Clique aqui</a>
             </p>
            </li>
         </ol>
@@ -55,24 +55,27 @@
     <script>
         function changeName(tag_id){
             let name_tag_selected = document.getElementById(tag_id).id
-            let name_tag_frm = document.getElementById('nm-frn')
-
+            let name_tag_frm = document.getElementById('nm-frm')
+            console.log(name_tag_selected);
+            
             switch (name_tag_selected) {
                 case 'slc1':
-                    
+                    name_tag_frm.innerHTML = `Gastar, poupar ou investir?`
                     break;
                 case 'slc2':
-                
+                    name_tag_frm.innerHTML = `Renda fixa ou variável?`
                 break;
                 case 'slc3':
-                    
+                    name_tag_frm.innerHTML = `Conhecendo o seu perfil de investidor`
                     break;
                 case 'slc4':
-                
+                    name_tag_frm.innerHTML = `Planejamento financeiro`
                 break;
                 default:
                     break;
             }
+
+
         }
     </script>
 </body>

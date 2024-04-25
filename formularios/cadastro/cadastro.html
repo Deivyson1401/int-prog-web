@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/formularios/cadastro/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Cadastro
+        </h1>
+    </header>
+    <main>
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email">
+        </div>
+        <div>
+            <label for="password">Senha</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <label for="nasc">Data de nascimento</label>
+            <input type="date" id="nasc">
+        </div>
+        <div>
+            <label for="sx"></label>
+            <select id="sx">
+                <option value="">Selecione seu gênero</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Transexual">Transexual</option>
+                <option value="Não binário">Não binário</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div>
+        <div>
+            <label for="estados"></label>
+            <select onclick="addOption()" name="estados" id="estados">
+                <option value="">Informe o estado</option>
+            </select>
+        </div>
+
+        
+    </main>
+    <script>
+        const list_states = ["Acre","Alagoas","Amapá","Amazonas",
+        "Bahia","Ceará","Espírito Santo","Goiás","Maranhão",
+        "Mato Grosso","Mato Grosso do Sul","Minas Gerais","Pará"
+        ,"Paraíba","Paraná","Pernambuco","Piauí","Rio de Janeiro"
+        ,"Rio Grande do Norte","Rio Grande do Sul","Rondônia",
+        "Roraima","Santa Catarina","São Paulo","Sergipe",
+        "Tocantins","Distrito Federal"]
+
+        function addOption(){
+            for (const estado of list_states) {
+                let option = new Option(estado, estado)
+                let select = document.querySelector('#estados')
+                select.add(option)
+            }
+        }
+
+    </script>
+</body>
+</html>

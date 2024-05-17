@@ -18,7 +18,7 @@ h2,p {
 
 .container {
     display: grid;
-    grid-template-columns: 870% 30%;
+    grid-template-columns: 70% 30%;
 }
 
 aside {

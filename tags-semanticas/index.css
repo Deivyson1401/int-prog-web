@@ -1,6 +1,6 @@
 nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 h1, nav {
@@ -29,6 +29,34 @@ li {
 
 footer {
     border-top: 1px solid black;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.ctn-lst {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+.lst {
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    margin: 1em;
+    border-radius: 15px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.btn-buy {
+    margin-bottom: 1em;
+    background-color: rgb(96, 255, 96);
+    padding: 2px 5px 2px 5px;
+    border-radius: 45px;
+}
+
+.img-fem {
+    height: 15em;
+    width: 15em;
 }

@@ -1,0 +1,18 @@
+header {
+    text-align: center;
+}
+
+img {
+    width: 120px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.midia {
+    display: grid;
+    grid-template-rows: 25% 75%;
+}
+
+main {
+    text-align: center;
+}

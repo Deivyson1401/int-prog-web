@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+}
+
+#div-i {
+    background-color: red;
+    width: 700px;
+    padding: 0px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+    
+span {
+    font-size: 50px;
+}
+
+#div-f {
+    background-color: green;
+    width: 700px;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    height: max-content;
+    align-items: center;
+    flex-direction: column;
+}
+    
+#div-i2 {
+    margin: 50px 0px 50px 0px;
+    background-color: red;
+    width: 700px;
+    padding: 0px;
+    text-align: center;
+    font-size: 40px;
+}
+    
+#div-f2 {
+    margin: 0px 0px 50px 0px;
+    background-color: green;
+    width: 700px;
+    padding: 25px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#span {
+    font-size: 30px;
+}
